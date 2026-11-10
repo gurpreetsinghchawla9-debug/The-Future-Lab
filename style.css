@@ -1,0 +1,192 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7f6f2;
+  color: #171717;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 8%;
+  border-bottom: 1px solid #e6e4df;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: #888;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.tag {
+  border: 1px solid #dedbd4;
+  padding: 9px 17px;
+  border-radius: 30px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 35px;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 105px);
+  letter-spacing: -7px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+h1 span {
+  color: #a6a49e;
+}
+
+.hero p {
+  max-width: 480px;
+  margin: 28px auto;
+  color: #777;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  background: #171717;
+  color: white;
+  padding: 15px 27px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #777;
+  transform: translateY(-3px);
+}
+
+.section {
+  padding: 75px 8%;
+}
+
+.section h2 {
+  font-size: 34px;
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 35px;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: #efeee9;
+  border: 1px solid #e6e4df;
+  border-radius: 18px;
+  padding: 30px;
+  min-height: 210px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: #eae8e1;
+}
+
+.number {
+  font-size: 12px;
+  color: #999;
+}
+
+.card h3 {
+  font-size: 21px;
+  margin: 35px 0 12px;
+}
+
+.card p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.quote {
+  background: #191919;
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.quote h2 {
+  font-size: clamp(30px, 5vw, 55px);
+  letter-spacing: -2px;
+}
+
+.quote p {
+  color: #aaa;
+  margin-top: 18px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 8%;
+  color: #888;
+  font-size: 12px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    letter-spacing: -3px;
+  }
+
+  nav {
+    padding: 22px 6%;
+  }
+
+  .section {
+    padding: 55px 6%;
+  }
+}
